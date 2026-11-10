@@ -231,7 +231,7 @@ export const hairproducts = [
 		id: 20,
 		name: "Protective Style Scalp Spray",
 		category: "Hair care",
-		price: 2900,
+		price: 12900,
 		rating: 4.3,
 		reviews: 74,
 		image: "",
