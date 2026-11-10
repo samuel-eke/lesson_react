@@ -253,7 +253,7 @@ export const hairproducts = [
 	},
 	{
 		id: 22,
-		name: "Sulfate-Free Curl Shampoo",
+		name: "Sulfate-Free Curl Shampoo product",
 		category: "Shampoo & conditioning",
 		price: 3600,
 		rating: 4.4,
