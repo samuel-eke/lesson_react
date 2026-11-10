@@ -6,6 +6,7 @@ import GalleryPage from "./pages/gallery";
 import ContactPage from "./pages/contact";
 import CartDrawer from "./components/cartdrawer";
 import Footer from "./components/footer";
+
 function App() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -14,7 +15,6 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Contact Form State
   const [contactForm, setContactForm] = useState({
     fullName: '',
     email: '',
@@ -24,7 +24,7 @@ function App() {
   });
   const [contactSubmitted, setContactSubmitted] = useState(false);
 
-  // Shopping Cart Actions
+  
   const addToCart = (product) => {
     setCart(prevCart => {
       const existing = prevCart.find(item => item.id === product.id);
@@ -59,7 +59,7 @@ function App() {
   const cartTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const cartItemCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
-  // Contact Form Actions
+  
   const handleContactChange = (e) => {
     const { name, value } = e.target;
     setContactForm(prev => ({ ...prev, [name]: value }));

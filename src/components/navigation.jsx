@@ -15,6 +15,7 @@ function Navigation({
 }) {
   return (
     <>
+    
       <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
         {links.map(({ to, label, end }) => (
           <NavLink
